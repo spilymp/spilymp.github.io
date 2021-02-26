@@ -1,0 +1,157 @@
+/* Color Theme Swatches in Hex */
+$color-one  : #4A8DF2;
+$color-two  : #55D444;
+$color-three: #FCA400;
+$color-four : #F52415;
+$color-five : #F0FAFA;
+
+body {
+    font-size          : 16px;
+    font-family        : sans-serif;
+    padding            : 0px;
+    margin             : 0px;
+    height             : 100%;
+    width              : 100%;
+    background-color   : #f1f1f1;
+    background         : linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../../assets/images/bg.jpg);
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center;
+    backdrop-filter    : blur(2px);
+
+    .wrapper {
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        width          : 100%;
+        height         : 100vh;
+
+        #me {
+            min-width       : 27rem;
+            max-width       : 100%;
+            opacity         : 0.80;
+            border          : solid 1px #eeeeee;
+            padding         : 3rem 3rem 3rem 3rem;
+            background-color: #ffffff;
+            border-radius   : 5px;
+            text-align      : center;
+            color           : #222222;
+
+            -webkit-animation: fadein 2s;
+            /* Safari, Chrome and Opera > 12.1 */
+            -moz-animation   : fadein 2s;
+            /* Firefox < 16 */
+            -ms-animation    : fadein 2s;
+            /* Internet Explorer */
+            -o-animation     : fadein 2s;
+            /* Opera < 12.1 */
+            animation        : fadein 2s;
+
+            div {
+                margin: 2rem 0 2rem 0;
+            }
+        }
+
+        .icon-link {
+            display        : inline;
+            font-size      : 2rem;
+            text-decoration: none;
+            margin         : 0 1rem 0 1rem;
+        }
+
+        .color-one {
+            color: $color-one;
+        }
+
+        .color-two {
+            color: $color-two;
+        }
+
+        .color-three {
+            color: $color-three;
+        }
+
+        .color-four {
+            color: $color-four;
+        }
+    }
+
+    .avatar {
+        border-top   : solid 0.5rem $color-one;
+        border-left  : solid 0.5rem $color-two;
+        border-right : solid 0.5rem $color-three;
+        border-bottom: solid 0.5rem $color-four;
+        border       : solid 0.05rem #d2d2d2;
+        max-height   : 10rem;
+        max-width    : 10rem;
+        border-radius: 100%;
+        padding      : 1rem;
+    }
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 0.8;
+        }
+    }
+
+    /* Firefox < 16 */
+    @-moz-keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 0.8;
+        }
+    }
+
+    /* Safari, Chrome and Opera > 12.1 */
+    @-webkit-keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 0.8;
+        }
+    }
+
+    /* Internet Explorer */
+    @-ms-keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 0.8;
+        }
+    }
+
+    /* Opera < 12.1 */
+    @-o-keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 0.8;
+        }
+    }
+
+    #copyright {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 0.5rem;
+        color: #6d6d6d;
+        font-size: 0.8rem;
+
+        a {
+            color: #6d6d6d;
+        }
+    }
+}
